@@ -16,14 +16,12 @@
 </head>
 <body>
     <div class="content-box">
+        <div class="logo-img">
+            <img src="img/tbbc-logo-1.png" alt="TBBC" class="img-fluid">
+        </div>
         <main class="title-main">
-            <span class="glitch" data-text="the boom">
-              the boom
-            </span>
-        </main>
-        <main class="title-main">
-            <span class="glitch" data-text="bap co">
-              bap co.
+            <span class="glitch" data-text="ACID">
+              ACID.
             </span>
         </main>
 

@@ -114,7 +114,12 @@ a {
   outline: none !important;
   text-decoration: none !important; }
   a:hover {
-    color: #d35b7d !important; }
+    color: #f27bfa !important; }
+
+.logo-img {
+  width: 300px; }
+  .logo-img img {
+    width: 100%; }
 
 .content-box {
   margin: 5% 0 0 5%;
@@ -126,18 +131,18 @@ a {
 .title-main {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  color: #d35b7d;
+  color: #f27bfa;
   display: block;
   font-weight: bold; }
 
 .subtitle {
   font-family: "Press Start 2P", cursive;
   background-color: #000000;
-  color: #d35b7d;
+  color: #f27bfa;
   font-size: 1rem;
   display: inline-block;
   padding: 10px;
-  text-shadow: 0 1px #4ec869;
+  text-shadow: 0 1px #4bbf5a;
   line-height: 22px; }
 
 .content-subtitle {
@@ -157,15 +162,15 @@ a {
       -o-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out; }
   .list-contacts i {
-    color: #4ec869;
-    text-shadow: 1px 1px #4ec869;
+    color: #4bbf5a;
+    text-shadow: 1px 1px #4bbf5a;
     background-color: #000000;
     font-size: 2rem;
     border: 2px solid #000000; }
     .list-contacts i:hover {
-      color: #d35b7d;
-      text-shadow: 1px 1px #d35b7d;
-      border: 2px dashed #d35b7d; }
+      color: #f27bfa;
+      text-shadow: 1px 1px #f27bfa;
+      border: 2px dashed #f27bfa; }
 
 .glitch {
   position: relative;
@@ -188,14 +193,14 @@ a {
   animation-name: glitch-animation;
   animation-duration: 4s;
   left: 4px;
-  text-shadow: -1px 0 #4ec869;
+  text-shadow: -1px 0 #4bbf5a;
   background: #000000; }
 
 .glitch::before {
   animation-name: glitch-animation-2;
   animation-duration: 6s;
   left: -4px;
-  text-shadow: 1px 0 #4ec869;
+  text-shadow: 1px 0 #4bbf5a;
   background: #000000; }
 
 footer {
@@ -205,10 +210,10 @@ footer {
   font-family: "PT Sans", sans-serif; }
 
 .green {
-  color: #4ec869; }
+  color: #4bbf5a; }
 
 .pink {
-  color: #d35b7d; }
+  color: #f27bfa; }
 
 .branco {
   color: #ffffff; }
@@ -250,7 +255,7 @@ footer {
     transform: translateX(-50%) translateY(-2px);
     background: #000000;
     padding: 5px 15px;
-    color: #d35b7d;
+    color: #f27bfa;
     white-space: nowrap;
     z-index: 999;
     border-radius: 0;
