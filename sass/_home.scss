@@ -1,0 +1,266 @@
+body{
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a{
+  outline: none !important;
+  text-decoration: none !important;
+  &:hover{
+    color: $rosa !important;
+  }
+}
+
+.content-box{
+  margin: 5% 0 0 5%;
+  width: auto;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.title-main {
+  font-family: $font-ps;
+  font-size: 3rem;
+  color: $rosa;
+  //background-color: $bg-color;
+  display: block;
+  font-weight: bold;
+}
+
+.subtitle{
+  font-family: $font-ps;
+  background-color: $preto;
+  color: $rosa;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px;
+  text-shadow: 0 1px $verde;
+  line-height: 22px;
+}
+
+.content-subtitle{
+  margin-top: 50px;
+}
+
+
+.list-contacts{
+  margin-left: 15px;
+  li{
+    margin: 30px;
+
+    &:nth-child(1){
+      i{
+        padding: 15px 18px;
+      }
+    }
+    &:nth-child(2){
+      i{
+        padding: 15px;
+      }
+    }
+
+    a{
+      @include transition(.25s);
+    }
+  }
+
+  i{
+    color: $verde;
+    text-shadow: 1px 1px $verde;
+    background-color: $preto;
+    font-size: 2rem;
+    border: 2px solid $preto;
+
+    &:hover{
+      color: $rosa;
+      text-shadow: 1px 1px $rosa;
+      border: 2px dashed $rosa;
+    }
+  }
+}
+
+.glitch {
+  position: relative;
+  margin: 5px;
+  //background: $glitch-bg-color;
+  background: $preto;
+  padding: 2px;
+}
+
+.glitch::before,
+.glitch::after {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  clip: rect(0, 900px, 0, 0);
+  content: attr(data-text);
+
+}
+
+.glitch::after {
+  animation-name: glitch-animation;
+  animation-duration: 4s;
+  left: 4px;
+  text-shadow: -1px 0 $verde;
+  //background: $glitch-bg-color;
+  background: $preto;
+}
+
+.glitch::before {
+  animation-name: glitch-animation-2;
+  animation-duration: 6s;
+  left: -4px;
+  text-shadow: 1px 0 $verde;
+  //background: $glitch-bg-color;
+  background: $preto;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0 15px;
+  font-family: $font-pt;
+}
+
+.green{
+  color: $verde;
+}
+
+.pink{
+  color: $rosa;
+}
+
+.branco{
+  color: $branco;
+}
+
+.bold{
+  font-weight: 700 !important;
+}
+
+@media(min-width: 320px){
+  body{
+    background: url(../img/mobile.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: $preto;
+
+
+  }
+}
+
+@media(min-width: 789px){
+  body{
+    background: url(../img/full.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: $preto;
+
+
+  }
+}
+
+/**
+ * Tooltip Styles
+ */
+$cubic: cubic-bezier(.64,.09,.08,1);
+
+[class^="tooltip"] {
+  position: relative;
+  &:after {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    content: attr(data-tooltip);
+    text-transform: uppercase;
+    top: 2.6em;
+    left: 50%;
+    transform: translateX(-50%) translateY(-2px);
+    background: $preto;
+    padding: 5px 15px;
+    color: $rosa;
+    white-space: nowrap;
+    z-index: 999;
+    border-radius: 0;
+    transition: opacity 0.2s $cubic, transform 0.2s $cubic;
+    font-family: $font-pt;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  &:hover {
+    &:after {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+
+    }
+  }
+}
+
+.tooltip--left {
+  &:after {
+    top: -4px;
+    left: 0;
+    transform: translateX(-112%) translateY(0);
+  }
+  &:hover {
+    &:after {
+      transform: translateX(-110%) translateY(0);
+    }
+  }
+}
+
+.tooltip--right {
+  &:after {
+    top: -4px;
+    left: 100%;
+    transform: translateX(12%) translateY(0);
+  }
+  &:hover {
+    &:after {
+      transform: translateX(10%) translateY(0);
+    }
+  }
+}
+
+.tooltip--triangle {
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px grey;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transform: translateX(-50%) translateY(-2px);
+    top: 1.1em;
+    left: 50%;
+    transition: opacity 0.2s $cubic, transform 0.2s $cubic;
+    z-index: 3;
+  }
+  &:hover {
+    &:before {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+}
+
+.bg-black{
+  background-color: $preto;
+}
