@@ -1,0 +1,27 @@
+{
+  "name": "tbbco",
+  "version": "1.0.0",
+  "description": "the boom bap co - building page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/patomarques/tbbco_building.git"
+  },
+  "author": "Pato Marques <patoxmarques@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patomarques/tbbco_building/issues"
+  },
+  "homepage": "https://github.com/patomarques/tbbco_building#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "normalize-scss": "^7.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
