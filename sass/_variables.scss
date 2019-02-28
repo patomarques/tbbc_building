@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 /* colors */
 $preto: #000000;
@@ -13,4 +13,22 @@ $verde: #4bbf5a;
 
 /* fonts */
 $font-ps: 'Press Start 2P', cursive;
-$font-pt: 'PT Sans', sans-serif;;
+$font-pt: 'PT Sans', sans-serif;
+$font-amatic: 'Amatic SC', cursive;
+
+
+.green{
+  color: $verde;
+}
+
+.pink{
+  color: $rosa;
+}
+
+.branco{
+  color: $branco;
+}
+
+.bold{
+  font-weight: 700 !important;
+}

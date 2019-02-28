@@ -42,14 +42,15 @@ a{
 }
 
 .subtitle{
-  font-family: $font-ps;
+  font-family: $font-amatic;
   background-color: $preto;
   color: $rosa;
-  font-size: 1rem;
+  font-size: 3.5rem;
   display: inline-block;
-  padding: 10px;
-  text-shadow: 0 1px $verde;
+  padding: 20px;
+  //text-shadow: 0 1px $verde;
   line-height: 22px;
+  margin-bottom: 40px;
 }
 
 .content-subtitle{
@@ -137,46 +138,6 @@ footer{
   bottom: 0;
   padding: 10px 0 15px;
   font-family: $font-pt;
-}
-
-.green{
-  color: $verde;
-}
-
-.pink{
-  color: $rosa;
-}
-
-.branco{
-  color: $branco;
-}
-
-.bold{
-  font-weight: 700 !important;
-}
-
-@media(min-width: 320px){
-  body{
-    background: url(../img/mobile.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: $preto;
-  }
-}
-
-@media(min-width: 789px){
-  body{
-    background: url(../img/full.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: $preto;
-
-
-  }
 }
 
 /**
@@ -272,4 +233,90 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 
 .bg-black{
   background-color: $preto;
+}
+
+@media(min-width: 320px){
+  body{
+    background: url(../img/mobile.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: $preto;
+  }
+
+  .tbbco-sign{
+    text-align: center;
+  }
+  .copyfight{
+    text-align: center;
+  }
+
+  .logo-img{
+    max-width:190px;
+  }
+
+  .content-subtitle{
+    margin-top: 0;
+    max-width: 100px;
+  }
+
+  .subtitle{
+    font-size: 1.7rem;
+    padding: 4px 7px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .list-contacts{
+    margin: 0;
+    li{
+      margin: 0 !important;
+
+      &:nth-child(1){
+        i{
+          padding: 7px 9px;
+        }
+      }
+      &:nth-child(2){
+        i{
+          padding: 7px;
+        }
+      }
+
+      i{
+        font-size: 18px;
+      }
+    }
+  }
+
+  footer{
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 789px){
+  body{
+    background: url(../img/full.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: $preto;
+  }
+
+  .tbbco-sign{
+    text-align: right;
+  }
+  .copyfight{
+    text-align: left;
+    
+    .copy-text{
+      margin-left: 30px;
+    }
+  }
+
+  .logo-img{
+    height: 300px;
+  }
 }

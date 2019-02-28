@@ -19,14 +19,9 @@
         <div class="logo-img">
             <img src="img/tbbc-logo-1.png" alt="TBBC" class="img-fluid">
         </div>
-        <main class="title-main">
-            <span class="glitch" data-text="ACID">
-              ACID.
-            </span>
-        </main>
 
         <div class="content-subtitle">
-            <h2 class="subtitle">Aguarde, novidades<br> em breve...</h2>
+            <h2 class="subtitle">Site em construção</h2>
         </div>
 
         <div class="content-icons">
@@ -50,10 +45,11 @@
     <footer class="container-fluid bg-black">
         <div class="container">
             <div class="row text-center">
-                <div class="col-sm-12">
-                    <span class="bg-brush">
-                        <a href="https://www.instagram.com/theboombap_co/" class="bold green">The boom bap co. <?= date('Y') ?></a> <span class="branco">&#9398;</span> <span class="pink">Todos os direitos reservados</span>
-                    </span>
+                <div class="col-xs-12 col-sm-6 tbbco-sign">
+                    <a href="/" class="bold green">The boom bap co. <?= date('Y') ?></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 copyfight">
+                    <span class="branco">&#9398;</span> <span class="pink copy-text">Todos os direitos reservados</span>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@
 /* Expanded Animations */
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 @keyframes glitch-animation {
   0% {
     clip: rect(42px, 9999px, 44px, 0); }
@@ -104,6 +105,18 @@
 
 /* colors */
 /* fonts */
+.green {
+  color: #4bbf5a; }
+
+.pink {
+  color: #f27bfa; }
+
+.branco {
+  color: #ffffff; }
+
+.bold {
+  font-weight: 700 !important; }
+
 body {
   width: 100%;
   height: 100%;
@@ -136,14 +149,14 @@ a {
   font-weight: bold; }
 
 .subtitle {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Amatic SC", cursive;
   background-color: #000000;
   color: #f27bfa;
-  font-size: 1rem;
+  font-size: 3.5rem;
   display: inline-block;
-  padding: 10px;
-  text-shadow: 0 1px #4bbf5a;
-  line-height: 22px; }
+  padding: 20px;
+  line-height: 22px;
+  margin-bottom: 40px; }
 
 .content-subtitle {
   margin-top: 50px; }
@@ -208,36 +221,6 @@ footer {
   bottom: 0;
   padding: 10px 0 15px;
   font-family: "PT Sans", sans-serif; }
-
-.green {
-  color: #4bbf5a; }
-
-.pink {
-  color: #f27bfa; }
-
-.branco {
-  color: #ffffff; }
-
-.bold {
-  font-weight: 700 !important; }
-
-@media (min-width: 320px) {
-  body {
-    background: url(../img/mobile.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #000000; } }
-
-@media (min-width: 789px) {
-  body {
-    background: url(../img/full.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #000000; } }
 
 /**
  * Tooltip Styles
@@ -309,5 +292,57 @@ footer {
 
 .bg-black {
   background-color: #000000; }
+
+@media (min-width: 320px) {
+  body {
+    background: url(../img/mobile.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000000; }
+  .tbbco-sign {
+    text-align: center; }
+  .copyfight {
+    text-align: center; }
+  .logo-img {
+    max-width: 190px; }
+  .content-subtitle {
+    margin-top: 0;
+    max-width: 100px; }
+  .subtitle {
+    font-size: 1.7rem;
+    padding: 4px 7px;
+    margin-bottom: 20px;
+    line-height: 30px; }
+  .list-contacts {
+    margin: 0; }
+    .list-contacts li {
+      margin: 0 !important; }
+      .list-contacts li:nth-child(1) i {
+        padding: 7px 9px; }
+      .list-contacts li:nth-child(2) i {
+        padding: 7px; }
+      .list-contacts li i {
+        font-size: 18px; }
+  footer {
+    font-size: 12px; } }
+
+@media (min-width: 789px) {
+  body {
+    background: url(../img/full.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000000; }
+  .tbbco-sign {
+    text-align: right; }
+  .copyfight {
+    text-align: left; }
+    .copyfight .copy-text {
+      margin-left: 30px; }
+  .logo-img {
+    height: 300px; } }
 
 /*# sourceMappingURL=theboombap.css.map */
