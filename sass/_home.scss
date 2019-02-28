@@ -295,7 +295,7 @@ $cubic: cubic-bezier(.64,.09,.08,1);
   }
 }
 
-@media(min-width: 789px){
+@media(min-width: 768px){
   body{
     background: url(../img/full.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -317,6 +317,38 @@ $cubic: cubic-bezier(.64,.09,.08,1);
   }
 
   .logo-img{
-    height: 300px;
+    max-width:350px;
   }
+
+  .subtitle{
+    margin-top: 10px;
+    font-size: 4em;
+    line-height: 50px;
+    padding: 10px;
+  }
+  .list-contacts{
+    li{
+      &:nth-child(1){
+        margin-right: 20px !important;
+        i{
+          padding: 10px 12px;
+        }
+      }
+      &:nth-child(2){
+        i{
+          padding: 10px;
+        }
+      }
+
+
+      i{
+        font-size: 38px;
+      }
+    }
+  }
+
+}
+
+@media(min-width: 1200px){
+
 }
